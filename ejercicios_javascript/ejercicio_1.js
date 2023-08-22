@@ -11,6 +11,7 @@
 //return pedidos; //retorno de la funcion
 //}
 
+//3)
 //console.log(procesarPedido(array));
 
 //const numero = [1, 2, 3, 4, 5, 6];
@@ -26,9 +27,32 @@
 //  console.log(suma); //me muestra la suma de la condicion
 //}
 //sumarPares(numero); //llamo a la funcion usando de parametro mi array
-
+//4)
+/*
 let palabras = ["computadora", "botella", "celular", "agua"];
 
 function terminanEnA(words) {
-  for (let i = 0; i < numeros.length; i++) {}
+  const tieneA = words.every((word) => word.endsWith("a"));
+  return tieneA;
 }
+console.log(terminanEnA(palabras));
+*/
+//5)
+
+let numeros = [-1, 5, -3, -9, 7, 4, -8, 2]; // creo
+
+function sortAbsoluteNumbers(numbers) {
+  let absolute = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    //recorro el array
+    let absolute_number = Math.abs(numbers[i]); // abolute_number guarda todo lo que hizo el metodo "math abs" con cada numero de mi array
+    absolute.push(absolute_number); // aca despues de crear mi lista vacia que es "absolute" lo que hice fue que los valores que fue cambiando la funcion "math abs" se guarden con push en mi lista vacia
+  }
+  let resultado = absolute.sort(function (a, b) {
+    //el absolute.sort ordena de menor a mayor los valores de mi array
+    return a - b;
+  });
+  return resultado;
+}
+console.log(sortAbsoluteNumbers(numeros));
