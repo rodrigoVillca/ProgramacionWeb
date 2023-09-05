@@ -96,6 +96,8 @@ function buscaPalabras(words, word) {
 }
 buscaPalabras(palabras, palabra);
 */
+/*
+objetos 1)
 function createObject(name, subs) {
   const Objeto = {
     name: name,
@@ -111,3 +113,31 @@ function createObject(name, subs) {
 //const persona = createObject("rodrigo", 30).name;
 const persona = createObject("rodrigo", 30);
 console.log(persona);
+*/
+//objetos 2)
+//1¿Qué se imprimirá en la consola al ejecutar el siguiente código? y por que?
+//se va imprimir 70 y 180 porque weight tiene el valor de 70 y height el valor de 180
+/*
+const person = {
+  name: "John",
+  age: 30,
+  hobbies: ["reading", "music", "sports"],
+};
+
+const { weight = 70, height = 180 } = person;
+console.log(weight, height);
+*/
+
+/*const person = {
+  name: "John",
+  age: 30,
+  hobbies: ["reading", "music", "sports"],
+};
+
+const { age: personAge } = person;
+console.log(personAge);
+no funcionoba porque estaba mal consologueado 
+*/
+//3) se llama desestructuración
+
+//titulo año Imagen
