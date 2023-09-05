@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.pelis {
+  display: flex;
+  justify-content: center;
+}
